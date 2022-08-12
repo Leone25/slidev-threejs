@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.31.3",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "animejs": "^3.2.1",
+    "bezier-easing": "^2.1.0",
+    "three": "^0.139.2",
+    "vuex": "^4.0.2"
+  },
+  "name": "robots",
+  "devDependencies": {
+    "@types/three": "^0.139.0"
+  }
+}

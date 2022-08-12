@@ -1,0 +1,47 @@
+ul {
+    margin-left: 40px;
+    list-style: none !important;
+}
+
+li {
+    padding: .3em 0 1em 40px !important;
+    background-image: url('checkmark.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 0 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+.loading:after {
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: solid 15px;
+    border-color: white transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+  
+@keyframes rotate {
+    from {transform: rotate(0deg) scale(1); border-color: white transparent;}
+    50% {transform: rotate(180deg) scale(0.9); border-color: #ff7f33 transparent;}
+    to {transform: rotate(360deg); border-color: white transparent;}
+}
